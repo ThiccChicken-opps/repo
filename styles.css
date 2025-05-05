@@ -7,13 +7,14 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #EFEEEA; /* light background */
+    color: #000000; /* main text color */
 }
 
 /* Header styles */
 header {
-    background-color: #333;
-    color: white;
+    background-color: #273F4F; /* dark header/nav */
+    color: #EFEEEA;
     padding: 10px 0;
 }
 
@@ -28,9 +29,14 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: white;
+    color: #EFEEEA;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #FE7743; /* orange highlight on hover */
 }
 
 /* Section spacing */
@@ -41,14 +47,14 @@ section {
 
 /* About section */
 #about {
-    background-color: #fff;
+    background-color: #ffffff;
     text-align: center;
     border-radius: 10px;
 }
 
 /* Projects section */
 #projects {
-    background-color: #fff;
+    background-color: #ffffff;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -57,7 +63,7 @@ section {
 }
 
 .project-card {
-    background-color: #e9e9e9;
+    background-color: #EFEEEA;
     padding: 20px;
     border-radius: 8px;
     text-align: center;
@@ -67,7 +73,7 @@ section {
 
 /* Contact section */
 #contact {
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 10px;
     padding: 40px 20px;
     text-align: center;
@@ -75,6 +81,7 @@ section {
 
 #contact h1 {
     margin-bottom: 20px;
+    color: #273F4F;
 }
 
 /* Form styles */
@@ -112,6 +119,8 @@ form textarea {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
+    background-color: #EFEEEA;
+    color: #000000;
 }
 
 form textarea {
@@ -120,7 +129,7 @@ form textarea {
 
 form button {
     padding: 12px 25px;
-    background-color: #333;
+    background-color: #FE7743; /* orange button */
     color: white;
     border: none;
     border-radius: 5px;
@@ -130,24 +139,25 @@ form button {
 }
 
 form button:hover {
-    background-color: #555;
+    background-color: #d85f2d; /* darker orange on hover */
 }
 
 /* Footer styles */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #333;
-    color: white;
+    background-color: #273F4F;
+    color: #EFEEEA;
     position: fixed;
     width: 100%;
     bottom: 0;
 }
+
 .back-button {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #333;
+    background-color: #FE7743;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -156,11 +166,34 @@ footer {
 }
 
 .back-button:hover {
-    background-color: #555;
+    background-color: #d85f2d;
 }
+
 .doge-image {
     display: block;
-    margin: 20px auto; /* auto centers horizontally */
+    margin: 20px auto;
     max-width: 100%;
     height: auto;
 }
+
+.section h1 i {
+    margin-left: 10px;
+    color: #FE7743; /* icon color */
+    font-size: 1.3em;
+    vertical-align: middle;
+}
+.about-link {
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    color: #273F4F;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .about-link:hover {
+    color: #FE7743;
+  }
